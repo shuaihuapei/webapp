@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    username: root
+    password: Pei19951011...
+    url: jdbc:mysql://39.104.165.98:3306/bookmanage
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.pei.bookmanager.pojo
+  configuration:
+    map-underscore-to-camel-case: true
